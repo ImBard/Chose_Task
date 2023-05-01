@@ -1,0 +1,167 @@
+.main {
+  background-color: rgb(182, 146, 28);
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+::-webkit-scrollbar {
+  overflow: overlay;
+  width: 10px;
+  
+}
+::-webkit-scrollbar-track {
+  display: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(182, 146, 28);
+  border-radius: 5px;
+}
+
+.card {
+  padding: 21px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  max-height: 550px;
+  width: 40%;
+  max-width: 60%;
+  background-color: white;
+  margin-top: 10%;
+}
+
+.title {
+  font-size: x-large;
+  margin-bottom: 13px;
+  font-weight: 500;
+  color: rgb(43, 43, 43);
+}
+
+.taskInput {
+  outline: none;
+  margin: 8px;
+  padding: 3px;
+  font-size: large;
+  border-inline: none;
+  border-top: none;
+  border-bottom: 1px solid ;
+  width: 80%;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.saveButton {
+  color: white;
+  background-color: rgb(182, 146, 28);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.saveButton:hover {
+  background-color: rgb(133, 106, 20);
+}
+
+.taskDiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+.taskDiv:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.buttonTask {
+  border: none;
+  display: flex;
+  background: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 13px;
+  border-radius: 8px;
+  width: 100%;
+  overflow: auto;
+}
+
+.savedInput {
+  width: 90%;
+  outline: none;
+  font-size: large;
+  padding: 8px 8px 3px 8px;
+  border-bottom-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  border-inline-width: 0;
+  border-top-width: 0;
+  background: none;
+}
+
+.savedInput:focus {
+  border-bottom: 1px solid gray;
+}
+
+
+.trash {
+  color: #e82626;
+}
+
+.raffleButton {
+  background-color: rgb(182, 146, 28);
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 13px;
+  width: 120px;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.raffleButton:hover {
+  background-color: rgb(145, 116, 22);
+}
+
+.taskChosen {
+  border: 1px solid rgb(24, 201, 24);
+  border-radius: 13px;
+  padding: 8px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+
+.myTask {
+  font-size: x-large;
+  word-spacing: 5%;
+  color: rgb(16, 151, 16);
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 920px) {
+  .card {
+    width: 80%;
+    max-width: 80%;
+  }
+}
